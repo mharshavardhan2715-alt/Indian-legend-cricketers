@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Indian Cricket Legends</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <header
+    
+    class="hero-section">
+
+        <div class="container">
+
+            <div class="logo-wrapper" style="text-align: center; margin-bottom: 20px;">
+
+                <img src="images/logo.webp" alt="Logo" style="width: 120px; height: auto;">
+
+            </div>
+
+           
+
+            <h1 class="hero-title">LEGENDS OF <br><span>INDIAN CRICKET</span></h1>
+
+            <p class="hero-subtitle">They are not just players, they are emotions. Relive the journey of India's greatest cricket legends.</p>
+
+        </div>
+
+    </header>
+
+
+
+    <main class="container">
+
+        <div class="legends-grid">
+
+           
+
+            <div class="legend-card" onclick="openProfile('sachin')">
+
+                <div class="card-img-wrapper"><img src="images/sachin tendulakar.jpg" alt="Sachin Tendulkar"></div>
+
+                <div class="card-info">
+
+                    <h3>Sachin Tendulkar</h3>
+
+                    <p>Batsman</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="legend-card" onclick="openProfile('virat')">
+
+                <div class="card-img-wrapper"><img src="images/virat.jpg" alt="Virat Kohli"></div>
+
+                <div class="card-info">
+
+                    <h3>Virat Kohli</h3>
+
+                    <p>Batsman</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="legend-card" onclick="openProfile('dhoni')">
+
+                <div class="card-img-wrapper"><img src="images/dhoni.webp" alt="MS Dhoni"></div>
+
+                <div class="card-info">
+
+                    <h3>MS Dhoni</h3>
+
+                    <p>Wicket Keeper</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="legend-card" onclick="openProfile('rohit')">
+
+                <div class="card-img-wrapper"><img src="images/rohit sharma.jpg" alt="Rohit Sharma"></div>
+
+                <div class="card-info">
+
+                    <h3>Rohit Sharma</h3>
+
+                    <p>Batsman</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="legend-card" onclick="openProfile('dravid')">
+
+                <div class="card-img-wrapper"><img src="images/rahul dravid.jpg" alt="Rahul Dravid"></div>
+
+                <div class="card-info">
+
+                    <h3>Rahul Dravid</h3>
+
+                    <p>Batsman</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="legend-card" onclick="openProfile('ganguly')">
+
+                <div class="card-img-wrapper"><img src="images/sourav ganguly.jpg" alt="Sourav Ganguly"></div>
+
+                <div class="card-info">
+
+                    <h3>Sourav Ganguly</h3>
+
+                    <p>Batsman</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="legend-card" onclick="openProfile('yuvraj')">
+
+                <div class="card-img-wrapper"><img src="images/yuvaraj singh.jpg" alt="Yuvraj Singh"></div>
+
+                <div class="card-info">
+
+                    <h3>Yuvraj Singh</h3>
+
+                    <p>All-rounder</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="legend-card" onclick="openProfile('kapildev')">
+
+                <div class="card-img-wrapper"><img src="images/kapildev.jpg" alt="Kapil Dev"></div>
+
+                <div class="card-info">
+
+                    <h3>Kapil Dev</h3>
+
+                    <p>All-rounder</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="legend-card" onclick="openProfile('kumble')">
+
+                <div class="card-img-wrapper"><img src="images/anil kumble.jpg" alt="Anil Kumble"></div>
+
+                <div class="card-info">
+
+                    <h3>Anil Kumble</h3>
+
+                    <p>Bowler</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="legend-card" onclick="openProfile('bumrah')">
+
+                <div class="card-img-wrapper"><img src="images/jasprit.png" alt="Jasprit Bumrah"></div>
+
+                <div class="card-info">
+
+                    <h3>Jasprit Bumrah</h3>
+
+                    <p>Bowler</p>
+
+                    <button class="view-btn">View Bio &rarr;</button>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeProfile()"></div>
+
+   
+
+    <div class="profile-modal" id="profileModal">
+
+        <button class="close-btn" onclick="closeProfile()">&times;</button>
+
+        <div class="modal-content" id="modalDynamicContent">
+
+        </div>
+
+    </div>
+
+
+
+    <script src="style.js"></script>
+
+</body>
+
+</html>
